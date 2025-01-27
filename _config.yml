@@ -1,7 +1,7 @@
 # site settings
 title: pixelblot
 subtitle: by Veith Weilnhammer
-email: v.pixelblot@gmail.com
+email: veith.weilnhammer@gmail.com
 description: an AI startup that works with passive data<br /> to measure, predict and monitor mental health.
 baseurl: # the subpath of your site, e.g. /blog
 url: https://pixelblot.github.io #the base hostname & protocol for your site
