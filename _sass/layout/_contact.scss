@@ -1,83 +1,55 @@
-///
-/// Forty by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
-
 /* Contact */
 
-	#contact {
-		border-bottom: solid 1px _palette(border);
-		overflow-x: hidden;
+#contact {
+	border-bottom: solid 1px _palette(border);
+	overflow-x: hidden;
 
-		> .inner {
-			@include vendor('display', 'block'); /* Remove flex, no columns */
-			width: 100%; /* Ensure full width */
-			padding: 2em 0; /* Add vertical spacing */
-			margin: 0 auto; /* Center-align content */
-	
-			/* Remove split logic */
-			> :nth-child(2n - 1) {
-				@include padding(4em, 0);
-				border-right: none; /* Remove the border */
-				width: 100%; /* Full width for this child */
-			}
-	
-			> :nth-child(2n) {
-				display: none; /* Hide the second column */
-			}
-	
-			> .split {
-				padding: 0;
-	
-				> * {
-					@include padding(3em, 0); /* Adjust padding for content */
-					position: relative;
-	
-					&:before {
-						display: none; /* Remove the border on top */
-					}
-				}
-			}
+	> .inner {
+		@include vendor('display', 'block'); /* No flex layout for columns */
+		padding: 0 !important;
+		width: 100%; /* Ensure full width */
+
+		/* Remove the small column logic */
+		> :nth-child(2n - 1) {
+			@include padding(4em, 0); /* Adjust padding */
+			border-right: none; /* Remove border on the right */
+			width: 100%; /* Full width for the main content */
+			z-index: 1;
 		}
 
-		@include breakpoint(medium) {
-			> .inner {
-				display: block;
-
-				> :nth-child(2n - 1) {
-					@include padding(4em, 0, (0, 0, 0, 0));
-					border-right: 0;
-					width: 100%;
-				}
-
-				> :nth-child(2n) {
-					padding-left: 0;
-					width: 100%;
-				}
-
-				> .split {
-					> * {
-						@include padding(3em, 0, (0, 0, 0, 0));
-
-						&:before {
-						}
-					}
-
-					> :first-child {
-						&:before {
-							display: block;
-						}
-					}
-				}
-			}
+		> :nth-child(2n) {
+			display: none; /* Completely hide the second column */
 		}
 
-		@include breakpoint(small) {
-			> .inner {
-				> :nth-child(2n - 1) {
-					@include padding(3em, 0, (0, 0, 0, 0));
+		> .split {
+			padding: 0;
+
+			> * {
+				@include padding(3em, 0); /* Adjust padding for content */
+				position: relative;
+
+				&:before {
+					display: none; /* Remove unnecessary borders */
 				}
 			}
 		}
 	}
+
+	@include breakpoint(medium) {
+		> .inner {
+			display: block;
+
+			> * {
+				width: 100%; /* Full width for all children */
+			}
+		}
+	}
+
+	@include breakpoint(small) {
+		> .inner {
+			> * {
+				width: 100%; /* Full width for small screens */
+			}
+		}
+	}
+}
