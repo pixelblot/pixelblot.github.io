@@ -11,42 +11,31 @@
 		overflow-x: hidden;
 
 		> .inner {
-			@include vendor('display', 'flex');
-			padding: 0 !important;
-
+			@include vendor('display', 'block'); /* Remove flex, no columns */
+			width: 100%; /* Ensure full width */
+			padding: 2em 0; /* Add vertical spacing */
+			margin: 0 auto; /* Center-align content */
+	
+			/* Remove split logic */
 			> :nth-child(2n - 1) {
-				@include padding(4em, 0, (0, 3em, 0, 0));
-				border-right: solid 1px _palette(border);
-				width: 100%;
-				z-index: 1;
+				@include padding(4em, 0);
+				border-right: none; /* Remove the border */
+				width: 100%; /* Full width for this child */
 			}
-
+	
 			> :nth-child(2n) {
-				padding-left: 0em;
-				width: 0%;
+				display: none; /* Hide the second column */
 			}
-
+	
 			> .split {
 				padding: 0;
-
+	
 				> * {
-					@include padding(3em, 0, (0, 0, 0, 3em));
+					@include padding(3em, 0); /* Adjust padding for content */
 					position: relative;
-
+	
 					&:before {
-						border-top: solid 1px _palette(border);
-						content: '';
-						display: block;
-						margin-left: -3em;
-						position: absolute;
-						top: 0;
-						width: calc(100vw + 3em);
-					}
-				}
-
-				> :first-child {
-					&:before {
-						display: none;
+						display: none; /* Remove the border on top */
 					}
 				}
 			}
