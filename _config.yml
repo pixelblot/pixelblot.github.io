@@ -1,8 +1,8 @@
 # site settings
 title: pixelblot
-subtitle: by Veith Weilnhammer
+subtitle: AI
 email: veith.weilnhammer@gmail.com
-description: pixelblot uses AI to XYZ.
+description: pixelblot uses AI to measure, predict and monitor mental health.  
 baseurl: # the subpath of your site, e.g. /blog
 url: https://pixelblot.github.io #the base hostname & protocol for your site
 author:

@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-landing-title: 'A new way to measure, predict and monitor mental health'
+landing-title: 'A NEW APPROACH TO MENTAL HEALTH'
 description: null
 image: null
 author: null
