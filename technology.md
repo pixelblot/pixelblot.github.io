@@ -1,6 +1,6 @@
 ---
 layout: landing
-title: AI solutions in mental health
+title: Mental health solutions
 description: 'Dynamic and specific mental health predictions for public mental health and precision medicine'
 image: assets/images/pic07.jpg
 nav-menu: true
