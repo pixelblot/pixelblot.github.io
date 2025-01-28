@@ -10,8 +10,8 @@ show_tile: false
 
 <section>
     <article>
-      <p>{{ Led by XYZ and XYZ, we are a team of neuroscientists, clinicians and deep learning researchers from UC Berkeley, XYZ, and XYZ. We are joined by scientific advisors XYZ, XYZ, and XYZ.
-            We value curiosity, creative leaps, and rapid execution. We’re looking for the best and brightest to join us as we grow. }}</p>
+      <p>Led by XYZ and XYZ, we are a team of neuroscientists, clinicians and deep learning researchers from UC Berkeley, XYZ, and XYZ. We are joined by scientific advisors XYZ, XYZ, and XYZ.
+            We value curiosity, creative leaps, and rapid execution. We’re looking for the best and brightest to join us as we grow.</p>
     </article>
 </section>
 
