@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Generic
-description: Lorem ipsum dolor est
+title: The team
+description: We are a group of scientists and clincian at UC Berkeley who are passionate about AI and mental health.
 image: assets/images/pic11.jpg
 nav-menu: true
 ---

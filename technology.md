@@ -1,7 +1,7 @@
 ---
-title: Landing
 layout: landing
-description: 'Lorem ipsum dolor sit amet nullam consequa<br />sed veroeros. tempus adipiscing nulla.'
+title: Our solution
+description: 'A new way to measure, predict, and monitor mental health'
 image: assets/images/pic07.jpg
 nav-menu: true
 ---

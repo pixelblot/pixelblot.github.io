@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Elements
+title: Our vision
+description: 'Mental health care for everyone, evverywhere, all at once'
 image: assets/images/pic01.jpg
 nav-menu: true
 ---
