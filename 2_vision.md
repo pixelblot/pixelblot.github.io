@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Our vision
+title: OUR VISION
 description: 'We seek to make state-of-the art mental health care accessible to everyone, everywhere, all at once'
 image: assets/images/pic06.jpg
 nav-menu: true
