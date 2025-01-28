@@ -1,6 +1,6 @@
 ---
 layout: landing
-title: Solutions for Mental Health
+title: New solutions for mental health
 description: 'We use advanced AI to enable early detection, real-time monitoring, and targeted strategies for public mental health and precision medicine'
 image: assets/images/pic07.jpg
 nav-menu: true
