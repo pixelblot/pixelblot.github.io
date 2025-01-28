@@ -2,7 +2,7 @@
 layout: landing
 title: A Global Challenge
 description: 'Mental health diagnosis is often delayed for years, leaving many without timely care.'
-image: assets/images/pic01.jpg
+image: assets/images/pic05.jpg
 nav-menu: true
 ---
 
