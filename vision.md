@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Our vision
-description: 'We seek to make state-ofo mental health care accessible to everyone, everywhere, all at once'
+description: 'We seek to make state-of-the art mental health care accessible to everyone, everywhere, all at once'
 image: assets/images/pic01.jpg
 nav-menu: true
 ---
