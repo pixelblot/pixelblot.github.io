@@ -1,8 +1,8 @@
 ---
 layout: landing
-title: Solutions for Mental Health
-description: 'We use advanced AI to generate dynamic and specific predictions for public mental health and precision medicine'
-image: assets/images/pic07.jpg
+title: A Global Challenge
+description: ' Mental disorders are the leading cause of disability worldwide. Diagnosis is often delayed for years, leaving many without timely care.'
+image: assets/images/pic01.jpg
 nav-menu: true
 ---
 
