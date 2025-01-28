@@ -1,8 +1,8 @@
 ---
 layout: landing
-title: A Global Challenge
-description: 'Mental health diagnosis is often delayed for years, leaving many without timely care.'
-image: assets/images/pic01.jpg
+title: Team + values
+description: 'We are a team of neuroscientists, clinicians and deep learning researchers. We value curiosity, creative leaps, and rapid execution'
+image: assets/images/pic09.jpg
 nav-menu: true
 ---
 
