@@ -1,7 +1,7 @@
 ---
 layout: landing
-title: Our solution
-description: 'A new way to measure, predict, and monitor mental health'
+title: AI solutions in mental health
+description: 'Our technology creates generates specific, dynamic, and robust mental health predictions for public mental health and precision medicine'
 image: assets/images/pic07.jpg
 nav-menu: true
 ---
