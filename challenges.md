@@ -1,7 +1,7 @@
 ---
 layout: landing
 title: A Global Challenge
-description: ' Mental disorders are the leading cause of disability worldwide. Diagnosis is often delayed for years, leaving many without timely care.'
+description: 'Mental health challenges are the leading cause of disability worldwide. Their diagnosis is often delayed for years, leaving many without timely care.'
 image: assets/images/pic01.jpg
 nav-menu: true
 ---
