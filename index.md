@@ -8,7 +8,7 @@ author: null
 show_tile: false
 ---
 
-<article><p>{{ tile.descriptionLed by XYZ and XYZ, we are a team of neuroscientists, clinicians and deep learning researchers from UC Berkeley, XYZ, and XYZ. We are joined by scientific advisors XYZ, XYZ, and XYZ.
+<article><p>{{Led by XYZ and XYZ, we are a team of neuroscientists, clinicians and deep learning researchers from UC Berkeley, XYZ, and XYZ. We are joined by scientific advisors XYZ, XYZ, and XYZ.
 We value curiosity, creative leaps, and rapid execution. We’re looking for the best and brightest to join us as we grow.}}</p></article>
 
 
