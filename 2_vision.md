@@ -17,7 +17,6 @@ nav-menu: true
 		</header>
 
 <!-- Content -->
-<h2 id="content">Magnitude and Impact of Mental Health Challenges</h2>
 <p>At Pixelblot, our vision is a world where mental health care is proactive, accessible, and personalized. We aim to revolutionize how mental health is understood and managed by enabling early, accurate detection of mental health changes through innovative digital technologies. By shifting from reactive interventions to continuous, real-time monitoring, we strive to empower individuals and clinicians with actionable insights, allowing for better, faster, and more tailored care. Our goal is to eliminate barriers to mental health support, ensuring timely and effective interventions for everyone, everywhere.</p>
 
 <hr class="major" />
