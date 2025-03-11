@@ -13,7 +13,7 @@ nav-menu: true
 <section id="one">
 	<div class="inner">
 		<header class="major">
-			<h2>A global challenge</h2>
+			<h1>A GLOBAL CHALLENGE</h1>
 		</header>
 
 <!-- Content -->
