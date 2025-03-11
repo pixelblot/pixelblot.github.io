@@ -1,7 +1,7 @@
 ---
 layout: landing
 title: TEAM + VALUES
-description: 'We are a team of neuroscientists, clinicians and deep learning researchers at UC Berkeley'
+description: 'We are neuroscientists, clinicians, and deep learning experts dedicated to accessible mental health solutions.'
 image: assets/images/pic09.jpg
 nav-menu: true
 ---
@@ -13,14 +13,17 @@ nav-menu: true
 <section id="one">
 	<div class="inner">
 		<header class="major">
-			<h2>Sed amet aliquam</h2>
+			<h2>Who we are</h2>
 		</header>
-		<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
+		<p>Pixelblot transforms everyday digital interactions into real-time mental health predictions. Our commitment is to build a smarter, more responsive mental health ecosystem accessible to everyone, everywhere, all at once. We envision a future where digital biomarksers empower early detection, personalized interventions, and informed clinical decisions in mental health. Our clients include mental health professionals, healthcare organizations, and digital health platforms seeking innovative, data-driven solutions.</p>
+        <ul class="actions">
+			<li><a href="#founders" class="button next scrolly">Meet our founders</a></li>
+		</ul>
 	</div>
 </section>
 
 <!-- Two -->
-<section id="two" class="spotlights">
+<section id="founders" class="spotlights">
 	<section>
 		<a href="generic.html" class="image">
 			<img src="{% link assets/images/pic08.jpg %}" alt="" data-position="center center" />
