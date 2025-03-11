@@ -7,7 +7,7 @@ nav-menu: true
 ---
 
 <!-- Main -->
-<div id="main">
+<div id="main" class="alt">
 
 <!-- One -->
 <section id="one">

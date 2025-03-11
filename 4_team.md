@@ -1,6 +1,6 @@
 ---
 layout: landing
-title: TEAM & VALUES
+title: TEAM
 description: 'We are neuroscientists, clinicians, and AI experts dedicated to accessible mental health solutions.'
 image: assets/images/pic09.jpg
 nav-menu: true
