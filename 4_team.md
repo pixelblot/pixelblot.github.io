@@ -23,7 +23,7 @@ nav-menu: true
 <!-- Two -->
 <section id="founders" class="spotlights">
 	<section>
-		<a href="generic.html" class="image">
+		<a href="https://veithweilnhammer.github.io" class="image">
 			<img src="{% link assets/images/veith_profile.jpg %}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
@@ -31,15 +31,15 @@ nav-menu: true
 				<header class="major">
 					<h3>Dr. Veith Weilnhammer</h3>
 				</header>
-				<p>Veith Weilnhammer is a neuroscientist, psychiatrist, and psychotherapist. Veith completed his scientific and clinical training at Charité – Universitätsmedizin Berlin and the University of California Berkeley, specializing in human-computer interactions, digital biomarkers, and AI-driven mental health solutions.</p>
+				<p>Veith Weilnhammer is a neuroscientist, psychiatrist, and psychotherapist. Veith completed his scientific and clinical training at Charité – Universitätsmedizin Berlin and the University of California Berkeley. He specializes in human-computer interactions, digital biomarkers, and AI-driven mental health solutions.</p>
 				<ul class="actions">
-					<li><a href="generic.html" class="button">Learn more</a></li>
+					<li><a href="https://veithweilnhammer.github.io" class="button">Learn more</a></li>
 				</ul>
 			</div>
 		</div>
 	</section>
 	<section>
-		<a href="generic.html" class="image">
+		<a href="https://cogsci.berkeley.edu/people/faculty-director" class="image">
 			<img src="{% link assets/images/david_profile.jpg %}" alt="" data-position="top center" />
 		</a>
 		<div class="content">
@@ -47,9 +47,9 @@ nav-menu: true
 				<header class="major">
 					<h3>Prof. David Whitney</h3>
 				</header>
-				<p>David Whitney is a cognitive neuroscientist and professor of psychology at the University of California Berkeley. His background in perception, attention, and computational modeling at the University of California Berkeley. David's work on perception, attention, and action is foundational in translating cognitive neuroscience into innovative mental health technologies.</p>
+				<p>David Whitney is a cognitive neuroscientist and professor of psychology at the University of California Berkeley. David's work on perception, attention, and action is foundational in translating cognitive neuroscience into innovative mental health technologies.</p>
 				<ul class="actions">
-					<li><a href="generic.html" class="button">Learn more</a></li>
+					<li><a href="https://cogsci.berkeley.edu/people/faculty-director" class="button">Learn more</a></li>
 				</ul>
 			</div>
 		</div>
@@ -60,12 +60,9 @@ nav-menu: true
 <section id="three">
 	<div class="inner">
 		<header class="major">
-			<h2>Massa libero</h2>
+			<h2>REACH OUT</h2>
 		</header>
-		<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-		<ul class="actions">
-			<li><a href="generic.html" class="button next">Get Started</a></li>
-		</ul>
+		<p>We're building the future of digital mental health prediction. If you're an investor, engineer, clinician, or passionate about transformative mental health technology, let's connect.</p>
 	</div>
 </section>
 
