@@ -2,7 +2,7 @@
 layout: page
 title: SOLUTIONS
 description: 'We use advanced AI to enable early detection, real-time monitoring, and targeted strategies for public mental health and precision medicine.'
-image: assets/images/pic06.jpg
+image: assets/images/pic03.jpg
 nav-menu: true
 ---
 
@@ -22,9 +22,9 @@ nav-menu: true
 <hr class="major" />
 
 <h2 id="content">How MINDMAP works</h2>
-<p>MINDMAP uses everyday digital behavior to better understand and monitor mental health. People’s online behavior can reveal subtle yet important patterns related to mental health. Our tools detect changes that often remain unnoticed by traditional assessments without interfering with normal activities or requiring additional effort from users.
+<p>MINDMAP uses everyday digital behavior to better understand and monitor mental health. People’s online behavior can reveal subtle yet important patterns related to mental health. Our tools detect changes that often remain unnoticed by traditional assessments without interfering with normal activities or requiring additional effort from users.</br>
 
-MINDMAP identifies meaningful digital biomarkers — objective measures of the thougts and emotions that define mental helaht. By mapping these digital markers onto clearly defined mental health dimensions, our approach offers an intuitive and powerful way to detect early warning signs, track symptom development, and capture mental states in real time..</p>
+MINDMAP identifies meaningful digital biomarkers — objective measures of the thougts and emotions that define mental health. By mapping these digital markers onto clearly defined mental health dimensions, our approach offers an intuitive and powerful way to detect early warning signs, track symptom development, and capture mental states in real time..</p>
 
 <hr class="major" />
 
