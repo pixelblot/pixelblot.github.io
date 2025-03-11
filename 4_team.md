@@ -2,7 +2,7 @@
 layout: landing
 title: TEAM
 description: 'We are neuroscientists & clinicians dedicated to accessible mental health solutions.'
-image: assets/images/pic09.jpg
+image: assets/images/pic10.jpg
 nav-menu: true
 ---
 
