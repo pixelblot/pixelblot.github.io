@@ -62,12 +62,9 @@ nav-menu: true
 <section id="three">
 	<div class="inner">
 		<header class="major">
-			<h2>Massa libero</h2>
+			<h2>REACH OUT</h2>
 		</header>
 		<p>We're building the future of digital mental health prediction. If you're an investor, engineer, clinician, or passionate about transformative mental health technology, let's connect.</p>
-		<ul class="actions">
-			<li><a href="generic.html" class="button next">Get Started</a></li>
-		</ul>
 	</div>
 </section>
 
