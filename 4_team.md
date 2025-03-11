@@ -16,7 +16,9 @@ nav-menu: true
 			<h2>Vision</h2>
 		</header>
 		<p>Pixelblot transforms everyday digital interactions into real-time mental health predictions. Our commitment is to build a smarter, more responsive mental health ecosystem accessible to everyone, everywhere, all at once. We envision a future where digital biomarksers empower early detection, personalized interventions, and informed clinical decisions in mental health. Our clients include mental health professionals, healthcare organizations, and digital health platforms seeking innovative, data-driven solutions.</p>
-        <p><a href="#founders">Learn more about our founders.</a></p>
+        <ul class="actions">
+			<li><a href="#founders" class="button next">Meet our Founders</a></li>
+		</ul>
 	</div>
 </section>
 
@@ -60,9 +62,12 @@ nav-menu: true
 <section id="three">
 	<div class="inner">
 		<header class="major">
-			<h2>REACH OUT</h2>
+			<h2>Massa libero</h2>
 		</header>
 		<p>We're building the future of digital mental health prediction. If you're an investor, engineer, clinician, or passionate about transformative mental health technology, let's connect.</p>
+		<ul class="actions">
+			<li><a href="generic.html" class="button next">Get Started</a></li>
+		</ul>
 	</div>
 </section>
 
