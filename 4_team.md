@@ -1,7 +1,7 @@
 ---
 layout: landing
 title: TEAM & VALUES
-description: 'We are neuroscientists, clinicians, and deep learning experts dedicated to accessible mental health solutions.'
+description: 'We are neuroscientists and dedicated to accessible mental health solutions.'
 image: assets/images/pic09.jpg
 nav-menu: true
 ---
@@ -49,7 +49,7 @@ nav-menu: true
 				<header class="major">
 					<h3>Prof. David Whitney</h3>
 				</header>
-				<p>David Whitney is a cognitive neuroscientist and professor of psychology at the University of California Berkeley. David's work on perception, attention, and action is foundational in translating cognitive neuroscience into innovative mental health technologies.</p>
+				<p>David Whitney is a cognitive neuroscientist and professor of psychology at the University of California Berkeley. David's work on perception, attention, and action is foundational in translating cognitive neuroscience into innovative tools for decision making in medicine and economics.</p>
 				<ul class="actions">
 					<li><a href="https://cogsci.berkeley.edu/people/faculty-director" class="button">Learn more</a></li>
 				</ul>
