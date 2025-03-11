@@ -18,7 +18,7 @@ nav-menu: true
 
 <!-- Content -->
 <h2 id="content">Magnitude and Impact of Mental Health Challenges</h2>
-<p>Mental health disorders are the leading cause of disability worldwide. During their lifetime, one in three people will develop a diagnosable mental health condition, and at any given time, one in eight adults meets the criteria for mental illness. Depression alone is projected to become the leading cause of disease globally by 2030. The economic impact is equally profound, with mental health conditions costing nearly $2.5 trillion globally in 2010—a figure expected to rise to over $6 trillion by 2030. Beyond these economic impacts, mental health conditions severely affect individuals' quality of life, relationships, productivity, and overall well-being.</p>
+<p>Mental health disorders are the leading cause of disability worldwide. During their lifetime, one in three people will develop a diagnosable mental health condition, and at any given time, one in eight adults meets the criteria for mental illness. Depression alone is projected to become the leading cause of disease globally by 2030. The economic impact is equally profound, with mental health conditions costing nearly $2.5 trillion globally in 2010 — a figure expected to rise to over $6 trillion by 2030. Beyond these economic impacts, mental health conditions severely affect individuals' quality of life, relationships, productivity, and overall well-being.</p>
 
 <hr class="major" />
 
