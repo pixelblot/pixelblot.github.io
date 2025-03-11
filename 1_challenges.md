@@ -2,7 +2,7 @@
 layout: landing
 title: A GLOBAL CHALLENGE
 description: 'Mental health challenges often take years to diagnose, leaving many without timely care.'
-image: assets/images/challenge.png
+image: assets/images/team.png
 nav-menu: true
 ---
 
