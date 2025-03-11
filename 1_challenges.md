@@ -25,4 +25,10 @@ nav-menu: true
 <h2 id="content">Barriers to Timely Mental Health Care</h2>
 <p>A major barrier in mental health care is the substantial delay in diagnosis and treatment. For many disorders, the duration of untreated illness frequently spans several years. For example, individuals living with obsessive-compulsive disorder typically wait an average of seven years before receiving a diagnosis. Traditional language-based assessments are often subjective, infrequent, and rely heavily on self-reporting. The absence of scalable, continuous, and objective assessment tools means subtle changes in perception, cognition, emotion, and behavior — early indicators of emerging mental health issues — often go unnoticed until conditions worsen. This delay allows disorders to progress, which causes chronic challenges that are often resistant to treatment.</p>
 
+<hr class="major" />
+At Pixelblot, we want to close the gap in mental health diagnosis.
+<ul class="actions">
+	<li><a href="2_vision.html" class="button">Our vision</a></li>
+</ul>
+
 </div>
