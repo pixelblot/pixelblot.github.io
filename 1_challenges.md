@@ -29,6 +29,7 @@ nav-menu: true
 At Pixelblot, we want to close the gap in mental health diagnosis.
 <ul class="actions">
 	<li><a href="2_vision.html" class="button">Our vision</a></li>
+	<li><a href="3_technology.html" class="button">Solutions</a></li>
 </ul>
 
 </div>
