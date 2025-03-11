@@ -1,7 +1,7 @@
 ---
 layout: page
 title: SOLUTIONS
-description: 'We use advanced AI to enable early detection, real-time monitoring, and targeted strategies for public mental health and precision medicine.'
+description: 'We use AI to enable early detection, real-time monitoring, and targeted strategies for public mental health and precision medicine.'
 image: assets/images/solution.png
 nav-menu: true
 ---
