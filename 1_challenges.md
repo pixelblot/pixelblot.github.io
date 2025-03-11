@@ -2,7 +2,7 @@
 layout: page
 title: SOLUTIONS
 description: 'We use advanced AI to enable early detection, real-time monitoring, and targeted strategies for public mental health and precision medicine.'
-image: assets/images/pic06.jpg
+image: assets/images/pic05.jpg
 nav-menu: true
 ---
 
@@ -15,6 +15,19 @@ nav-menu: true
 		<header class="major">
 			<h1>Elements</h1>
 		</header>
+
+
+<!-- Content -->
+<h2 id="content">Magnitude and Impact of Mental Health Challenges</h2>
+<p>Mental health challenges are the leading cause of disability worldwide. In a lifetime, on in three people develop a diagnosable mental health condition. At any given time, one in eight adults meet the criteria for a mental illness. Depression, in particular, is projected to become the leading cause of disease worldwide by 2030. The economic burden is substantial, with mental illnesses costing nearly $2.5 trillion globally in 2010, a figure expected to rise to over $6 trillion by 2030. Beyond economic costs, mental health disorders significantly impair individuals' quality of life, affecting relationships, productivity, and overall well-being.</p>
+
+<h2 id="content">Barriers to Timely Mental Health Care</h2>
+<p>A significant challenge in mental health care is the delay in diagnosis and treatment. For many disorders, the duration of untreated illness is typically on the order of several years. For people living with obsessive-compulsive disorder, for example, it takes seven years on average before a diagnosis is made. The lack of scalable, continuous, and objective BLABLABLA, subtle changes in perception, cognition, emotion ,and behavior, which could signal emerging mental health issues, often go unnoticed. The gap in timely intervention can cause disorders to progress. Once they become chronic, which is typically the case when the duration of untreated illness is several years, mental health challenges are often resistant to treatment.</p>
+
+<h2 id="content">The Digital Health Gap</h2>
+<p>Digital behaviors offer valuable insights into mental health. However, current healthcare systems have not embraced the potential of digital biomarkers. AI-driven analyses of digital behavior present an opportunity to bridge this gap, enabling early detection, monitoring, and personalized interventions in mental health.</p>
+
+
 
 <!-- Content -->
 <h2 id="content">Sample Content</h2>
