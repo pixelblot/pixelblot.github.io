@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: landing
 title: OUR VISION
 description: 'We seek to make state-of-the art mental health care accessible to everyone, everywhere, all at once'
 image: assets/images/vision.png
@@ -7,14 +7,11 @@ nav-menu: true
 ---
 
 <!-- Main -->
-<div id="main" class="alt">
+<div id="main">
 
 <!-- One -->
 <section id="one">
 	<div class="inner">
-		<header class="major">
-			<h1>VISION</h1>
-		</header>
 
 <!-- Content -->
 <p>At Pixelblot, our vision is a world where mental health care is proactive, accessible, and personalized. We aim to revolutionize how mental health is understood and managed by enabling early, accurate detection of mental health changes through innovative digital technologies. By shifting from reactive interventions to continuous, real-time monitoring, we strive to empower individuals and clinicians with actionable insights, allowing for better, faster, and more tailored care. Our goal is to eliminate barriers to mental health support, ensuring timely and effective interventions for everyone, everywhere.</p>

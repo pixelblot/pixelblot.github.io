@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: landing
 title: A GLOBAL CHALLENGE
 description: 'Mental health challenges often take years to diagnose, leaving many without timely care.'
 image: assets/images/challenge.png
@@ -7,14 +7,11 @@ nav-menu: true
 ---
 
 <!-- Main -->
-<div id="main" class="alt">
+<div id="main">
 
 <!-- One -->
 <section id="one">
 	<div class="inner">
-		<header class="major">
-			<h1>A GLOBAL CHALLENGE</h1>
-		</header>
 
 <!-- Content -->
 <h2 id="content">Magnitude and Impact of Mental Health Challenges</h2>
