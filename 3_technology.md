@@ -15,6 +15,8 @@ nav-menu: true
 		<header class="major">
 			<h1>SOLUTIONS</h1>
 		</header>
+	</div>
+</section>
 
 <!-- Content -->
 <p>At Pixelblot, we developed MINDMAP (Mapping INdividual Digital behavior to MentAl health And Psychopathology). MINDMAP opens the door to faster, more accurate, and more compassionate mental health care for everyone.</p>
