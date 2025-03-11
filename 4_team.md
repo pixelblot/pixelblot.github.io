@@ -1,7 +1,7 @@
 ---
 layout: landing
 title: TEAM & VALUES
-description: 'We are neuroscientists and dedicated to accessible mental health solutions.'
+description: 'We are neuroscientists, clinicians, and AI experts dedicated to accessible mental health solutions.'
 image: assets/images/pic09.jpg
 nav-menu: true
 ---
