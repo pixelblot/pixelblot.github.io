@@ -22,12 +22,12 @@ tiles-count: 6
 # Icons are not shown if value is empty
 # You need to restart jekyll for changes to have an effect
 socials:
-  GitHub: https://github.com/pixelblot
+  GitHub: https://github.com/veithweilnhammer
   GitLab:
   Google-Plus:
   Instagram:
-  LinkedIn:
-  Twitter:
+  LinkedIn: https://www.linkedin.com/in/veith-weilnhammer-742b41282/
+  Twitter: 
   Facebook:
   Slack:
 
