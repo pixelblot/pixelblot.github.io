@@ -2,7 +2,7 @@
 layout: landing
 title: OUR VISION
 description: 'We seek to make state-of-the art mental health care accessible to everyone, everywhere, all at once'
-image: assets/images/team.png
+image: assets/images/vision.png
 nav-menu: true
 ---
 
@@ -14,35 +14,49 @@ nav-menu: true
 	<div class="inner">
 
 <!-- Content -->
-<p>At Pixelblot, our vision is a world where mental health care is proactive, accessible, and personalized. We aim to revolutionize how mental health is understood and managed by enabling early, accurate detection of mental health changes through innovative digital technologies. By shifting from reactive interventions to continuous, real-time monitoring, we strive to empower individuals and clinicians with actionable insights, allowing for better, faster, and more tailored care. Our goal is to eliminate barriers to mental health support, ensuring timely and effective interventions for everyone, everywhere.</p>
+<p style="text-align: justify;">
+At Pixelblot, we want mental health care to be proactive, personal, and within reach for everyone. We're building tools to catch early signs of mental health challenges by analyzing how people interact with technology. Instead of waiting for symptoms to get worse, we aim to support people and clinicians with real-time insights — fast, accurate, and data-driven.
+</p>
 
 <hr class="major" />
 
 <h2 id="content">Screening</h2>
-<p>Early screening involves the rapid, accurate detection of mental health issues before symptoms become severe. Digital screening technologies can analyze everyday behaviors to detect subtle signs of distress or emerging conditions. By integrating screening into everyday digital interactions, we seek to enable widespread and effortless assessments. This proactive approach ensures timely identification, reducing the typical years-long delays experienced with traditional methods.</p>
+<p style="text-align: justify;">
+We use digital behavior to flag early signs of distress — before things escalate. No surveys, no clinics. Just subtle, continuous screening built into everyday tech.
+</p>
 
 <hr class="major" />
 
 <h2 id="content">Monitoring</h2>
-<p>Continuous monitoring provides ongoing, real-time insights into an individual’s mental health. Unlike traditional periodic assessments, digital monitoring uses passive data to identify subtle, day-to-day changes in mood, cognition, and behavior. This continuous flow of objective data helps clinicians track symptoms accurately, respond swiftly to critical changes, and adjust treatments as necessary. With this, we aim to improve the quality and effectiveness of mental health care.</p>
+<p style="text-align: justify;">
+Mental health changes over time — and we track it in real-time. Passive data helps us catch shifts in mood, focus, or energy that often go unnoticed.
+</p>
 
 <hr class="major" />
 
 <h2 id="content">Personalized Interventions</h2>
-<p>Personalized interventions tailor mental health strategies to the unique needs and behaviors of each individual. When guided by continuous digital biomarkers, interventions can be customized dynamically to match a person’s evolving mental state. For instance, predictive modeling can anticipate episodes of anxiety or depression, enabling preemptive strategies such as digital cognitive-behavioral tools, tailored therapeutic content, or timely professional outreach. This enables precision medicine that enhances treatment effectiveness, engagement, and long-term recovery.</p>
+<p style="text-align: justify;">
+We don’t believe in one-size-fits-all. By learning from your patterns, we can predict rough patches and suggest timely, tailored support — from a breathing app to professional help.
+</p>
 
 <hr class="major" />
 
 <h2 id="content">Decision Support</h2>
-<p>Digital biomarkers provide valuable decision support tools for clinicians. By summarizing complex behavioral data into clear, actionable insights, clinicians gain an objective foundation for diagnostic decisions and treatment planning. These tools can highlight critical changes in patient status, recommend timely adjustments to care plans, and suggest evidence-based interventions, empowering clinicians to deliver higher-quality, data-driven care.</p>
+<p style="text-align: justify;">
+We turn complex data into clear insights. Clinicians get real-time support for decisions — what’s changing, what’s working, and what’s not.
+</p>
 
 <hr class="major" />
 
 <h2 id="content">Public mental health</h2>
-<p>By aggregating digital biomarkers at a large scale, we seek to identify and monitor trends in population mental health. Such insights can inform public health strategies, allowing policymakers and healthcare providers to better understand and address mental health challenges at the community level. Population-level analyses supports preventive efforts, resource allocation, and effective public mental health strategies.</p>
+<p style="text-align: justify;">
+Aggregated, anonymized data helps us spot larger patterns — what communities are struggling, when, and how we can respond earlier.
+</p>
 
 <hr class="major" />
-<p> To achieve these goals, Pixelblot uses AI to transform digital behaviors into actionable predictions for mental health.</p>
+<p style="text-align: justify;">
+We're building AI that turns digital behavior into mental health insight. The goal: better outcomes, earlier support, for more people.
+</p>
 <ul class="actions">
 	<li><a href="3_technology.html" class="button">Solutions</a></li>
 </ul>
