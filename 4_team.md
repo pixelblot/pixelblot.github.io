@@ -15,8 +15,12 @@ nav-menu: true
 		<header class="major">
 			<h2>Vision</h2>
 		</header>
-		<p>Pixelblot's commitment is to build a smarter, more responsive mental health ecosystem accessible to everyone, everywhere, all at once. We envision a future where digital biomarksers empower early detection, personalized interventions, and informed clinical decisions in mental health. Our clients include mental health professionals, healthcare organizations, and digital health platforms seeking innovative, data-driven solutions.</p>
-        <ul class="actions">
+		<p style="text-align: justify;">
+			Pixelblot's commitment is to build a smarter, more responsive mental health ecosystem accessible to everyone, everywhere, all at once.
+			We envision a future where digital biomarkers empower early detection, personalized interventions, and informed clinical decisions in mental health.
+			Our clients include mental health professionals, healthcare organizations, and digital health platforms seeking innovative, data-driven solutions.
+		</p>
+		<ul class="actions">
 			<li><a href="#founders" class="button next scrolly">Meet our Founders</a></li>
 		</ul>
 	</div>
@@ -33,7 +37,9 @@ nav-menu: true
 				<header class="major">
 					<h3>Dr. Veith Weilnhammer</h3>
 				</header>
-				<p>Veith Weilnhammer is a neuroscientist, psychiatrist, and psychotherapist. Veith completed his scientific and clinical training at Charité – Universitätsmedizin Berlin and the University of California Berkeley. He specializes in human-computer interactions, digital biomarkers, and AI-driven mental health solutions.</p>
+				<p style="text-align: justify;">
+					Veith Weilnhammer is a neuroscientist, psychiatrist, and psychotherapist. Veith completed his scientific and clinical training at Charité – Universitätsmedizin Berlin and the University of California Berkeley. He specializes in human-computer interactions, digital biomarkers, and AI-driven mental health solutions.
+				</p>
 				<ul class="actions">
 					<li><a href="https://veithweilnhammer.github.io" class="button">Learn more</a></li>
 				</ul>
@@ -49,7 +55,9 @@ nav-menu: true
 				<header class="major">
 					<h3>Prof. David Whitney</h3>
 				</header>
-				<p>David Whitney is a cognitive neuroscientist and professor of psychology at the University of California Berkeley. David's work on perception, attention, and action is foundational in translating cognitive neuroscience into innovative tools for decision making in medicine and economics.</p>
+				<p style="text-align: justify;">
+					David Whitney is a cognitive neuroscientist and professor of psychology at the University of California Berkeley. David's work on perception, attention, and action is foundational in translating cognitive neuroscience into innovative tools for decision making in medicine and economics.
+				</p>
 				<ul class="actions">
 					<li><a href="https://cogsci.berkeley.edu/people/faculty-director" class="button">Learn more</a></li>
 				</ul>
@@ -64,7 +72,9 @@ nav-menu: true
 		<header class="major">
 			<h2>REACH OUT</h2>
 		</header>
-		<p>We're building the future of digital mental health prediction. If you're an investor, engineer, clinician, or passionate about transformative mental health technology, let's connect.</p>
+		<p style="text-align: justify;">
+			We're building the future of digital mental health prediction. If you're an investor, engineer, clinician, or passionate about transformative mental health technology, let's connect.
+		</p>
 	</div>
 </section>
 
