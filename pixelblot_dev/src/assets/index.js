@@ -89,6 +89,7 @@ import twitter from "./socials/twitter.svg";
 import github from "./socials/github.svg";
 import linkedin from "./socials/linkedin.svg";
 import email from "./socials/email.svg";
+import BenefitAnim1 from "./animations/BenefitAnim1";
 
 
 export {
@@ -173,5 +174,6 @@ export {
   policy, 
   IT, 
   app, 
-  browser
+  browser,
+  BenefitAnim1
 };

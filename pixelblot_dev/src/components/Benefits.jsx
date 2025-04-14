@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { benefits } from "../constants";
 import Heading from "./Heading";
 import Section from "./Sections";
@@ -8,70 +8,84 @@ import ClipPath from "../assets/svg/ClipPath";
 
 const Benefits = () => {
   const [activeStep, setActiveStep] = useState(0);
-  const scrollRef = useRef(null);
-
   const current = benefits[activeStep];
+  const AnimationComponent = current?.animation;
+
+  const next = () => {
+    setActiveStep((prev) => (prev + 1) % benefits.length);
+  };
+
+  const prev = () => {
+    setActiveStep((prev) => (prev === 0 ? benefits.length - 1 : prev - 1));
+  };
 
   return (
     <Section id="features">
-      <div className="container relative z-2">
-
-        {/* Page title */}
+      <div className="container relative z-2 overflow-hidden">
+        {/* Header */}
         <Heading
           className="mx-auto text-center md:max-w-md lg:max-w-2xl"
           title="Rethinking mental health"
+          text="We believe mental health care should be accessible to all."
         />
 
-        {/* Upper section: image + content */}
-        <div className="flex flex-col md:flex-row items-center justify-between mt-12 gap-10">
-          {/* Image / 3D Visual */}
-          <div className="w-full md:w-1/2">
-            {current.imageUrl && (
-              <img
-                src={current.imageUrl}
-                alt={current.title}
-                className="w-full max-w-sm mx-auto"
-              />
-            )}
+        {/* Main content */}
+        <div className="mt-12 flex items-center justify-center gap-4">
+          {/* ← Arrow */}
+          <button
+            onClick={prev}
+            className="bg-n-7 hover:bg-n-6 text-white px-3 py-2 rounded-full"
+          >
+            ←
+          </button>
+
+          {/* Content (Image or Animation + Text) */}
+          <div className="flex flex-col md:flex-row items-center justify-between gap-10 w-full max-w-6xl">
+            {/* Animation or Fallback Image */}
+            <div className="w-full md:w-1/2 flex justify-center">
+              {AnimationComponent ? (
+                <AnimationComponent />
+              ) : (
+                current.imageUrl && (
+                  <img
+                    src={current.imageUrl}
+                    alt={current.title}
+                    className="w-full max-w-xs md:max-w-sm"
+                  />
+                )
+              )}
+            </div>
+
+            {/* Text */}
+            <div className="w-full md:w-1/2 max-w-xl text-center md:text-left">
+              <p className="text-xs uppercase tracking-wide text-n-3 mb-2"></p>
+              <h3 className="text-3xl font-bold text-white mb-4">{current.title}</h3>
+              <p className="text-n-3 mb-6">{current.text}</p>
+            </div>
           </div>
 
-          {/* Text content */}
-          <div className="w-full md:w-1/2 max-w-xl">
-            <p className="text-xs uppercase tracking-wide text-n-3 mb-2">
-              {`How it works: ${String(activeStep + 1).padStart(2, "0")}.`}
-            </p>
-            <h3 className="text-3xl font-bold text-white mb-4">{current.title}</h3>
-            <p className="text-n-3 mb-6">{current.text}</p>
-            <a
-              href={current.link}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold text-sm uppercase hover:opacity-90"
-            >
-              Connect Now
-              <Arrow />
-            </a>
-          </div>
+          {/* → Arrow */}
+          <button
+            onClick={next}
+            className="bg-n-7 hover:bg-n-6 text-white px-3 py-2 rounded-full"
+          >
+            →
+          </button>
         </div>
 
-        {/* Step headlines row */}
-        <div
-          ref={scrollRef}
-          className="mt-16 flex overflow-x-auto no-scrollbar gap-6 snap-x snap-mandatory px-4"
-        >
+        {/* Step headlines row — only on md+ screens */}
+        <div className="mt-16 hidden md:flex gap-6 justify-center">
           {benefits.map((step, index) => (
             <button
               key={index}
               onClick={() => setActiveStep(index)}
-              className={`shrink-0 snap-start w-[16rem] text-left py-4 border-t-2 transition-all ${
+              className={`w-[16rem] text-left py-4 border-t-2 transition-all ${
                 index === activeStep
                   ? "border-purple-500 text-white"
                   : "border-n-6 text-n-4"
               }`}
             >
-              <p className="text-sm mb-1 font-mono uppercase tracking-widest">
-                {`0${index + 1}.`}
-              </p>
               <h4 className="text-lg font-bold">{step.title}</h4>
-              <p className="mt-1 text-sm text-n-3 line-clamp-2">{step.text}</p>
             </button>
           ))}
         </div>

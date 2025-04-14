@@ -79,6 +79,7 @@ const Header = () => {
         </Button> */}
 
         <Button
+          noSvg
           className="ml-auto lg:hidden"
           px="px-3"
           onClick={toggleNavigation}

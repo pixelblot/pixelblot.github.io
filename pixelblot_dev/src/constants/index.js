@@ -47,7 +47,8 @@ import {
   policy, 
   IT, 
   app, 
-  browser
+  browser,
+  BenefitAnim1
 } from "../../src/assets";
 
 export const navigation = [
@@ -97,12 +98,31 @@ export const notificationImages = [notification4, notification3, notification2];
 export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
 export const brainwaveServices = [
-  "Screening",
-  "Realtime monitoring",
-  "Public mental health",
-  "Precision medicine",
+  {
+    id: "0",
+    title: "Screening",
+    text: "Early detection of mental health risk using passive digital behavior.",
+    imageUrl: benefitImage1,
+  },
+  {
+    id: "1",
+    title: "Realtime monitoring",
+    text: "Track mental health continuously with non-invasive, ambient signals.",
+    imageUrl: benefitImage1,
+  },
+  {
+    id: "2",
+    title: "Public mental health",
+    text: "Population-scale insight into mental wellbeing from digital ecosystems.",
+    imageUrl: benefitImage1,
+  },
+  {
+    id: "3",
+    title: "Precision medicine",
+    text: "Personalized predictions to guide timely intervention and treatment.",
+    imageUrl: benefitImage1,
+  },
 ];
-
 export const brainwaveServicesIcons = [
   recording03,
   recording01,
@@ -115,30 +135,33 @@ export const benefits = [
   {
     id: "0",
     title: "A global challenge",
-    text: "Mental health is the leading cause of disability worldwide. One in three people will suffer from mental illness at some point in their life. Yet, mental health challenges often take years to diagnose, leaving many without timely care.",
+    text: "One in three people will experience mental illness at some point in their life. Yet, these challenges often go undetected for years, leaving many without timely care. At Pixelblot, we want to make mental health support accessible to everyone, everywhere, all at once.",
     backgroundUrl: "assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
-    // imageUrl: benefitImage1,
+    imageUrl: benefitImage1,
+    animation: BenefitAnim1,
     link: "#technology",
     light: true,
   },
   {
     id: "1",
     title: "A vision for the future",
-    text: "Pixelblot wants to make state-of-the art mental health care accessible to everyone, everywhere, & all at once. We are building AI to enable early detection, real-time monitoring, & targeted strategies for public mental health and precision medicine.",
+    text: "We imagine a future where mental health can be measured at scale. Accurate, fair, and efficient assessments will help identify those at risk, track changes over time, match people with the right treatment, and guide public health efforts where they’re needed most.",
     backgroundUrl: "assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
-    // imageUrl: benefitImage2,
+    imageUrl: benefitImage1,
+    animation: BenefitAnim1,
     link: "#integration",
     light: true,
   },
   {
     id: "2",
-    title: "Digital mental health",
-    text: "Our technology transforms digital footprints into actionable mental health predictions that protect user privacy. We interface with adaptive digital interventions to deliver timely and personalized support at scale - online or in real life.",
+    title: "Digital phenotyping",
+    text: "At Pixelblot, we’ve developed a new way to measure mental health. Our technology turns digital behavior into real-time predictions that are precise, actionable, and privacy-preserving. We connect these insights to adaptive interventions that deliver personalized support at scale - online and in real life.",
     backgroundUrl: "assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
-    // imageUrl: benefitImage3,
+    imageUrl: benefitImage1,
+    animation: BenefitAnim1,
     link: "#roadmap",
     light: true,
   },
@@ -152,7 +175,7 @@ export const roadmap = [
     date: "2024",
     status: "done",
     imageUrl: roadmap1,
-    colorful: true,
+    colorful: false,
   },
   {
     id: "1",
@@ -161,7 +184,7 @@ export const roadmap = [
     date: "2024",
     status: "done",
     imageUrl: roadmap2,
-    colorful: true,
+    colorful: false,
   },
   {
     id: "2",
@@ -177,37 +200,37 @@ export const roadmap = [
 export const collabText =
   "Pixelblot integrates with digital systems to deliver real-time mental health predictions from passive data.";
 
-export const collabContent = [
-  {
-    id: "0",
-    title: "API",
-    text: "Embed Pixelblot into any app or platform with minimal setup.",
-  },
-  {
-    id: "1",
-    title: "Automation",
-    text: "Trigger interventions based on digital phenotypes.",
-  },
-  {
-    id: "2",
-    title: "Secure & Compliant",
-    text: "Built for clinical standards and with medical-grade encryption.",
-  },
-  {
-    id: "3",
-    title: "Human in the Loop",
-    text: "Supports professionals with explainable, actionable data.",
-  },
-];
+  export const collabContent = [
+    {
+      id: "0",
+      title: "API",
+      text: "Embed Pixelblot into any app or platform with minimal setup.",
+    },
+    {
+      id: "1",
+      title: "Automation",
+      text: "Trigger interventions based on digital phenotypes.",
+    },
+    {
+      id: "2",
+      title: "Secure & Compliant",
+      text: "Built for clinical standards and with medical-grade encryption.",
+    },
+    {
+      id: "3",
+      title: "Human in the Loop",
+      text: "Supports professionals with explainable, actionable data.",
+    },
+  ];
 
 export const collabApps = [
-  // {
-  //   id: "0",
-  //   title: "Clinicians",
-  //   icon: clinicians,
-  //   width: 80,
-  //   height: 80,
-  // },
+  {
+    id: "0",
+    title: "Clinicians",
+    icon: framer,
+    width: 80,
+    height: 80,
+  },
   // {
   //   id: "1",
   //   title: "Scientists",

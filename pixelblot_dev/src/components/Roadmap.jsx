@@ -9,57 +9,60 @@ import { Gradient } from "./design/Roadmap";
 
 const Roadmap = () => (
   <Section className="overflow-hidden" id="roadmap">
-    <div className="container md:pb-10">
-      <Heading title="What we’re working on" />
+    <div className="container pb-8 md:pb-12">
+    <Heading
+        className="mx-auto text-center md:max-w-md lg:max-w-2xl"
+          title="What we are working on"
+          text="Our roadmap toward accessible mental health care"
+        />
 
-      <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
+      <div className="relative grid gap-6 md:grid-cols-2 md:gap-6">
         {roadmap.map((item) => {
           const status = item.status === "done" ? "Done" : "In progress";
 
           return (
             <div
-              className={`md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] ${
+              className={`md:flex even:md:translate-y-[4rem] p-0.25 rounded-[2rem] ${
                 item.colorful ? "bg-conic-gradient" : "bg-n-6"
               }`}
               key={item.id}
             >
-              <div className="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15">
-                <div className="absolute top-0 left-0 max-w-full">
+              <div className="relative p-6 bg-n-8 rounded-[1.75rem] overflow-hidden xl:p-10">
+                {/* Background Grid */}
+                <div className="absolute top-0 left-0 opacity-10">
                   <img
-                    className="w-full"
+                    className="w-full max-w-[400px]"
                     src={grid}
-                    width={550}
-                    height={550}
                     alt="Grid"
                   />
                 </div>
-                <div className="relative z-1">
-                  <div className="flex items-center justify-between max-w-[27rem] mb-8 md:mb-20">
-                    <Tagline>{item.date}</Tagline>
 
-                    <div className="flex items-center px-4 py-1 bg-n-1 rounded text-n-8">
+                {/* Content */}
+                <div className="relative z-1">
+                  <div className="flex items-center justify-between mb-6">
+                    <Tagline>{item.date}</Tagline>
+                    <div className="flex items-center px-3 py-0.5 bg-n-1 rounded text-n-8 text-xs font-semibold">
                       <img
-                        className="mr-2.5"
+                        className="mr-2"
                         src={item.status === "done" ? check2 : loading1}
-                        width={16}
-                        height={16}
+                        width={14}
+                        height={14}
                         alt={status}
                       />
-                      <div className="tagline">{status}</div>
+                      {status}
                     </div>
                   </div>
 
-                  <div className="mb-10 -my-10 -mx-15">
+                  <div className="mb-4">
                     <img
-                      className="w-full"
+                      className="rounded-lg object-cover max-h-[200px] w-full"
                       src={item.imageUrl}
-                      width={628}
-                      height={426}
                       alt={item.title}
                     />
                   </div>
-                  <h4 className="h4 mb-4">{item.title}</h4>
-                  <p className="body-2 text-n-4">{item.text}</p>
+
+                  <h4 className="text-xl font-bold mb-2">{item.title}</h4>
+                  <p className="text-sm text-n-4">{item.text}</p>
                 </div>
               </div>
             </div>
@@ -69,17 +72,10 @@ const Roadmap = () => (
         <Gradient />
       </div>
 
-      <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
-        {/* <Button href="/roadmap">Our roadmap</Button> */}
-        {/* <a
-                href="https://veithweilnhammer.github.io/"
-                className="inline-flex items-center gap-2 font-code text-xs font-bold text-n-1 uppercase tracking-wider hover:underline"
-              >
-                Request a demo
-                <Arrow />
-              </a> */}
-      </div>
-
+      {/* Optional CTA */}
+      {/* <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
+        <Button href="/roadmap">Our roadmap</Button>
+      </div> */}
     </div>
   </Section>
 );

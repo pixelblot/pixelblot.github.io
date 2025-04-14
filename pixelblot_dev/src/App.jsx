@@ -8,12 +8,14 @@ import Hero from "./components/Hero";
 import Pricing from "./components/Pricing";
 import Roadmap from "./components/Roadmap";
 import Services from "./components/Services";
+// import BenefitAnim1 from "./assets/animations/BenefitAnim1";
 
 const App = () => {
   return (
     <>
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Header />
+        {/* <BenefitAnim1 /> */}
         <Hero />
         <Benefits />
         <Services />
@@ -22,7 +24,9 @@ const App = () => {
         <Team />
         {/* <Pricing /> */}
         <Footer />
+        
       </div>
+
 
       <ButtonGradient />
     </>
