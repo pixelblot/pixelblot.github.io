@@ -61,13 +61,14 @@ const Pricing = () => {
                 <p className="text-n-3 mb-4">{current.description}</p>
 
                 {current.price && (
-                  <div className="flex justify-center md:justify-start items-baseline gap-2 text-white mb-4">
-                    <div className="h3 text-lg font-light">$</div>
-                    <div className="text-[3.5rem] leading-none font-bold">
-                      {current.price}
-                    </div>
-                  </div>
-                )}
+  <div className="flex flex-col items-center md:items-start text-white mb-4">
+    <div className="flex items-baseline gap-1">
+      <span className="text-lg font-light">$</span>
+      <span className="text-[3.5rem] leading-none font-bold">{current.price}</span>
+    </div>
+    <span className="text-sm text-n-3 mt-1">per token</span>
+  </div>
+)}
 
                 {/* <Button
                   className="w-full mb-6 text-white bg-black transition"
