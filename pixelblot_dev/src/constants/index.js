@@ -162,7 +162,7 @@ export const benefits = [
   {
     id: "2",
     title: "Digital phenotyping",
-    text: "We developed a new way to measure mental health. We transform digital behavior into in a high-dimensional predictions that visualize risk, resilience, and changes in mental health. Our technology powers timely and personalized mental health support at scale.",
+    text: "We developed a new way to measure mental health. We transform digital behavior into high-dimensional predictions that visualize risk, resilience, and changes in mental health. Our technology powers timely and personalized mental health support at scale.",
     backgroundUrl: "assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage1,
