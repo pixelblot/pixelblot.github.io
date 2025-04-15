@@ -23,13 +23,14 @@ const Services = () => {
     <Section id="technology">
       <div className="container">
         <Heading
-        className="mx-auto text-center md:max-w-md lg:max-w-2xl"
+          className="mx-auto text-center md:max-w-md lg:max-w-2xl"
           title="Technology"
-          text="We work toward mental health care that is more accessible, fair, and efficient."
+          text="Pixedlblot powers scalable mental health assessments & support."
         />
 
-        <div className="relative flex flex-col items-center justify-center border border-n-1/10 rounded-3xl p-8 lg:p-10">
-          {/* Step headline buttons (top row) */}
+      <div className="relative flex flex-col items-center justify-center border border-n-1/10 rounded-3xl p-4 pt-10 lg:pt-12">
+
+          {/* Step headline buttons */}
           <div className="mb-8 flex flex-wrap justify-center gap-4">
             {brainwaveServices.map((item, index) => (
               <button
@@ -46,7 +47,7 @@ const Services = () => {
             ))}
           </div>
 
-          {/* Carousel with arrows + text */}
+          {/* Carousel with arrows + content */}
           <div className="flex items-center justify-center gap-6 w-full max-w-6xl">
             <button
               onClick={prev}
@@ -56,16 +57,22 @@ const Services = () => {
             </button>
 
             <div className="flex flex-col md:flex-row items-center gap-10 w-full justify-center text-center md:text-left">
-              {current.imageUrl && (
-                <img
-                  src={current.imageUrl}
-                  alt={current.title}
-                  className="w-64 h-64 md:w-64 md:h-64 object-contain"
-                />
-              )}
-              <div>
+              <div className="flex justify-center items-center w-full md:w-1/2">
+                <div className="aspect-square w-64 md:w-72">
+                  {current.animation ? (
+                    <current.animation />
+                  ) : current.imageUrl && (
+                    <img
+                      src={current.imageUrl}
+                      alt={current.title}
+                      className="w-full h-full object-contain"
+                    />
+                  )}
+                </div>
+              </div>
+              <div className="w-full md:w-1/2 max-w-xl">
                 <h5 className="text-2xl font-bold text-white mb-2">
-                  {/* {current.title} */}
+                  {current.title}
                 </h5>
                 <p className="text-n-3">{current.text}</p>
               </div>
@@ -79,7 +86,7 @@ const Services = () => {
             </button>
           </div>
 
-          {/* Learn More */}
+          {/* Optional Learn More */}
           {/* <div className="mt-8 text-center">
             <a
               href="https://veithweilnhammer.github.io/"

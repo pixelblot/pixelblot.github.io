@@ -10,26 +10,26 @@ const Collaboration = () => {
       <Heading
         className="mx-auto text-center md:max-w-md lg:max-w-2xl"
           title="Integration"
-         text="P)ixelblot interfaces with XYZ"
+         text="API-first architecture for embedding mental health predictions into any system."
         />
 
         <div className="relative flex flex-col lg:flex-row items-center justify-between border border-n-1/10 rounded-3xl p-8 lg:p-10">
           {/* Left: Integration Features */}
-          <div className="w-full lg:w-1/2 max-w-[25rem]">
-            <ul className="mb-8">
-              {collabContent.map((item) => (
-                <li className="mb-6" key={item.id}>
-                  <div className="flex items-center">
-                    <img src={check} width={24} height={24} alt="check" />
-                    <h6 className="body-2 ml-5">{item.title}</h6>
+          <ul className="mb-8">
+            {collabContent.map((item) => (
+              <li className="mb-6" key={item.id}>
+                <div className="flex items-start gap-5">
+                  <img src={check} width={24} height={24} alt="check" className="mt-1" />
+                  <div className="text-left lg:text-justify">
+                    <h6 className="body-2 font-bold mb-1">{item.title}</h6>
+                    {item.text && (
+                      <p className="body-2 text-n-4 leading-relaxed">{item.text}</p>
+                    )}
                   </div>
-                  {item.text && (
-                    <p className="body-2 mt-3 text-n-4">{item.text}</p>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
+                </div>
+              </li>
+            ))}
+          </ul>
 
           {/* Right: Image with radial layout */}
           <div className="w-full lg:w-1/2 flex justify-center">

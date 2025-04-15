@@ -48,7 +48,8 @@ import {
   IT, 
   app, 
   browser,
-  BenefitAnim1
+  BenefitAnim1,
+  TechnologyAnim1
 } from "../../src/assets";
 
 export const navigation = [
@@ -69,13 +70,13 @@ export const navigation = [
   },
   {
     id: "3",
-    title: "Roadmap",
-    url: "#roadmap",
+    title: "Team",
+    url: "#team",
   },
   {
     id: "4",
-    title: "Team",
-    url: "#team",
+    title: "Pricing",
+    url: "#pricing",
   },
   // {
   //   id: "4",
@@ -101,26 +102,30 @@ export const brainwaveServices = [
   {
     id: "0",
     title: "Screening",
-    text: "Early detection of mental health risk using passive digital behavior.",
+    text: "Pixelblot detects signs of mental health risk based on patterns of digital behavior. This enables proactive support before symptoms become severe.",
     imageUrl: benefitImage1,
+    animation: TechnologyAnim1,
   },
   {
     id: "1",
-    title: "Realtime monitoring",
-    text: "Track mental health continuously with non-invasive, ambient signals.",
+    title: "Realtime Monitoring",
+    text: "Our technology provides dynamic predictions that reflect how mental health changes over time and responds to treatment.",
     imageUrl: benefitImage1,
+    animation: TechnologyAnim1,
   },
   {
     id: "2",
-    title: "Public mental health",
-    text: "Population-scale insight into mental wellbeing from digital ecosystems.",
+    title: "Public Mental Health",
+    text: "We analyze behavioral data across populations to uncover trends in collective mental wellbeing. These insights can inform health policy, planning, and crisis response.",
     imageUrl: benefitImage1,
+    animation: TechnologyAnim1,
   },
   {
     id: "3",
-    title: "Precision medicine",
-    text: "Personalized predictions to guide timely intervention and treatment.",
+    title: "Precision Medicine",
+    text: "Pixelblot delivers personalized predictions to guide intervention with greater accuracy. Each individual’s mental health profile is used to tailor care to their unique needs.",
     imageUrl: benefitImage1,
+    animation: TechnologyAnim1,
   },
 ];
 export const brainwaveServicesIcons = [
@@ -135,18 +140,18 @@ export const benefits = [
   {
     id: "0",
     title: "A global challenge",
-    text: "One in three people will experience mental illness at some point in their life. Yet, these challenges often go undetected for years, leaving many without timely care. At Pixelblot, we want to make mental health support accessible to everyone, everywhere, all at once.",
+    text: "Today, one in eight people is struggling with mental illness. For one in three, it is a part of life at some point. Despite their impact, mental health challenges often go undetected for years after their onset, leaving many without timely care.",
     backgroundUrl: "assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage1,
     animation: BenefitAnim1,
-    link: "#technology",
+    link: "#challenge",
     light: true,
   },
   {
     id: "1",
     title: "A vision for the future",
-    text: "We imagine a future where mental health can be measured at scale. Accurate, fair, and efficient assessments will help identify those at risk, track changes over time, match people with the right treatment, and guide public health efforts where they’re needed most.",
+    text: "At Pixelblot, we want this to change. Scalable, accurate, fair, and efficient mental health assessments will help identify those at risk, monitor progress, guide treatment, and inform public health responses that deliver care where it’s needed most.",
     backgroundUrl: "assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage1,
@@ -157,15 +162,17 @@ export const benefits = [
   {
     id: "2",
     title: "Digital phenotyping",
-    text: "At Pixelblot, we’ve developed a new way to measure mental health. Our technology turns digital behavior into real-time predictions that are precise, actionable, and privacy-preserving. We connect these insights to adaptive interventions that deliver personalized support at scale - online and in real life.",
+    text: "We developed a new way to measure mental health. We transform digital behavior into in a high-dimensional predictions that visualize risk, resilience, and changes in mental health. Our technology powers timely and personalized mental health support at scale.",
     backgroundUrl: "assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage1,
     animation: BenefitAnim1,
-    link: "#roadmap",
+    link: "#technology",
     light: true,
   },
 ];
+
+
 
 export const roadmap = [
   {
@@ -209,7 +216,7 @@ export const collabText =
     {
       id: "1",
       title: "Automation",
-      text: "Trigger interventions based on digital phenotypes.",
+      text: "Trigger personalized interventions based on real-time digital phenotypes.",
     },
     {
       id: "2",
@@ -219,7 +226,7 @@ export const collabText =
     {
       id: "3",
       title: "Human in the Loop",
-      text: "Supports professionals with explainable, actionable data.",
+      text: "Empowers support systems with explainable predictions for better mental health support.",
     },
   ];
 
@@ -227,93 +234,72 @@ export const collabApps = [
   {
     id: "0",
     title: "Clinicians",
-    icon: framer,
-    width: 80,
-    height: 80,
+    icon: clinicians,
+    width: 34,
+    height: 36,
   },
-  // {
-  //   id: "1",
-  //   title: "Scientists",
-  //   icon: notion,
-  //   width: 34,
-  //   height: 36,
-  // },
-  // {
-  //   id: "2",
-  //   title: "Users",
-  //   icon: discord,
-  //   width: 36,
-  //   height: 28,
-  // },
-  // {
-  //   id: "3",
-  //   title: "Public health systems",
-  //   icon: slack,
-  //   width: 34,
-  //   height: 35,
-  // },
-  // {
-  //   id: "4",
-  //   title: "Digital Platforms",
-  //   icon: photoshop,
-  //   width: 34,
-  //   height: 34,
-  // },
-  // {
-  //   id: "5",
-  //   title: "Health apps",
-  //   icon: protopie,
-  //   width: 34,
-  //   height: 34,
-  // },
-  // {
-  //   id: "6",
-  //   title: "Framer",
-  //   icon: framer,
-  //   width: 26,
-  //   height: 34,
-  // },
-  // {
-  //   id: "7",
-  //   title: "Raindrop",
-  //   icon: raindrop,
-  //   width: 38,
-  //   height: 32,
-  // },
+  {
+    id: "1",
+    title: "Scientists",
+    icon: scientist,
+    width: 34,
+    height: 36,
+  },
+  {
+    id: "2",
+    title: "Public health systems",
+    icon: policy,
+    width: 34,
+    height: 35,
+  },
+  {
+    id: "3",
+    title: "Digital Platforms",
+    icon: browser,
+    width: 34,
+    height: 34,
+  },
+  {
+    id: "4",
+    title: "Health apps",
+    icon: app,
+    width: 34,
+    height: 34,
+  }
 ];
 
 export const pricing = [
   {
     id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
+    title: "Non-Profit",
+    description: "Free access for verified non-profit mental health organizations",
     price: "0",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Unlimited AI-assisted assessments and recommendations",
+      "Secure data integration with public systems",
+      "Full feature access without any cost",
     ],
   },
   {
     id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
+    title: "Standard",
+    description: "Affordable pay-as-you-go for private clinics and startups",
+    price: "1",
     features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
+      "Pay-per-token pricing for predictions and analytics",
+      "Self-serve dashboard",
+      "Email support",
     ],
   },
   {
     id: "2",
     title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: null,
+    description: "Solutions for high-impact partners",
+    price: "Custom",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Flexible licensing and volume-based pricing",
+      "Custom integration and onboarding",
+      "Dedicated support 24/7",
     ],
   },
 ];

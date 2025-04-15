@@ -8,7 +8,7 @@ const GaussianAnim = () => {
     const count = 500;
     const duration = 5000;
 
-    const radius = Symbol(); // radial distance from center in XY
+    const radius = Symbol();
     const theta = Symbol();
     const phi = Symbol();
     const depth = Symbol();
@@ -17,7 +17,7 @@ const GaussianAnim = () => {
     const height = root.current.offsetHeight;
     const centerX = width / 2;
     const centerY = height / 2;
-    const maxR = width * 0.3;
+    const maxR = width * 0.45;
     const target = { r: maxR };
 
     const particles = [];
@@ -40,9 +40,12 @@ const GaussianAnim = () => {
       el[depth] = z;
 
       const normalizedZ = (z + target.r) / (2 * target.r);
-      const size = 1 + 3 * normalizedZ;
+      const size = 3 + 3 * normalizedZ;
 
       el.dataset.originalSize = size;
+      el.dataset.theta = angle;
+      el.dataset.rad = rad;
+
       el.style.background = "white";
       el.style.width = `${size}px`;
       el.style.height = `${size}px`;
@@ -52,23 +55,22 @@ const GaussianAnim = () => {
       particles.push(el);
     }
 
-    // Movement animation
     const tl = createTimeline({
       defaults: {
         loop: true,
         ease: "inOut(1.3)",
-        onLoop: self => self.refresh(),
+        onLoop: (self) => self.refresh(),
       },
     });
 
     tl.add(
       particles,
       {
-        x: el => centerX + el[radius] * Math.sin(el[phi]) * Math.cos(el[theta]),
-        y: el => centerY + el[radius] * Math.sin(el[phi]) * Math.sin(el[theta]),
+        x: (el) => centerX + el[radius] * Math.sin(el[phi]) * Math.cos(el[theta]),
+        y: (el) => centerY + el[radius] * Math.sin(el[phi]) * Math.sin(el[theta]),
         duration: () => duration + utils.random(-200, 200),
         easing: "inOut(2)",
-        onLoop: self => {
+        onLoop: (self) => {
           const el = self.targets[0];
           const rad = target.r * Math.cbrt(Math.random());
           const angle = Math.random() * Math.PI * 2;
@@ -85,6 +87,9 @@ const GaussianAnim = () => {
           const size = 1 + 3 * normalizedZ;
 
           el.dataset.originalSize = size;
+          el.dataset.theta = angle;
+          el.dataset.rad = rad;
+
           el.style.width = `${size}px`;
           el.style.height = `${size}px`;
           self.refresh();
@@ -93,12 +98,12 @@ const GaussianAnim = () => {
       stagger((duration / count) * 1.1)
     );
 
-    const fadeIn = (p, color, sizeFactor) => {
+    const fadeIn = (p, color) => {
       const size = parseFloat(p.dataset.originalSize);
       p.animate(
         [
-          { backgroundColor: "white", width: `${size}px`, height: `${size}px` },
-          { backgroundColor: color, width: `${size * sizeFactor}px`, height: `${size * sizeFactor}px` },
+          { background: "white", width: `${size}px`, height: `${size}px` },
+          { background: color, width: `${size}px`, height: `${size}px` },
         ],
         { duration: 800, fill: "forwards", easing: "ease-in-out" }
       );
@@ -122,15 +127,32 @@ const GaussianAnim = () => {
 
     const sequence = async () => {
       while (true) {
-        // RED SCREENING ONLY
+        // RED SCREENING
         const redDots = [...particles].sort((a, b) => b[radius] - a[radius]).slice(0, count / 8);
-        redDots.forEach(p => fadeIn(p, "#ff0044", 2));
-        await new Promise(res => setTimeout(res, 10000));
+        redDots.forEach((p) => fadeIn(p, "#ff0044"));
+        await new Promise((res) => setTimeout(res, 10000));
         redDots.forEach((p, i) => {
           const size = parseFloat(p.dataset.originalSize);
-          fadeReset(p, size, i * 5); // staggered fade-back
+          fadeReset(p, size, i * 2); // gentle fade back
         });
-        await new Promise(res => setTimeout(res, 3000));
+        await new Promise((res) => setTimeout(res, 3000));
+
+        // ANGLE-BASED COLORBURST
+        particles.forEach((p, i) => {
+          const theta = parseFloat(p.dataset.theta);
+          const hue = Math.floor((theta / (2 * Math.PI)) * 360);
+          const color = `hsl(${hue}, 90%, 65%)`;
+          fadeIn(p, color);
+        });
+
+        await new Promise((res) => setTimeout(res, 10000));
+
+        particles.forEach((p, i) => {
+          const size = parseFloat(p.dataset.originalSize);
+          fadeReset(p, size, i * 2);
+        });
+
+        await new Promise((res) => setTimeout(res, 3000));
       }
     };
 
@@ -139,7 +161,7 @@ const GaussianAnim = () => {
     return () => {
       clearTimeout(seqTimeout);
       tl.pause();
-      particles.forEach(p => root.current.removeChild(p));
+      particles.forEach((p) => root.current.removeChild(p));
     };
   }, []);
 

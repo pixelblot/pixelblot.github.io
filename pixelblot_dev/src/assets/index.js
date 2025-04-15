@@ -35,13 +35,13 @@ import photoshop from "./collaboration/photoshop.png";
 import protopie from "./collaboration/protopie.png";
 import raindrop from "./collaboration/raindrop.png";
 import slack from "./collaboration/slack.png";
-import clinicians from "./collaboration/clinicians.png";
-import scientist from "./collaboration/scientist.png";
-import protectors from "./collaboration/protectors.png";
-import policy from "./collaboration/policy.png";
+import clinicians from "./collaboration/clinicians.svg";
+import scientist from "./collaboration/science.svg";
+import protectors from "./collaboration/protectors.svg";
+import policy from "./collaboration/wellfare.svg";
 import IT from "./collaboration/IT.png";
-import app from "./collaboration/app.png";
-import browser from "./collaboration/browser.png";
+import app from "./collaboration/app.svg";
+import browser from "./collaboration/browser.svg";
 
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
@@ -90,7 +90,7 @@ import github from "./socials/github.svg";
 import linkedin from "./socials/linkedin.svg";
 import email from "./socials/email.svg";
 import BenefitAnim1 from "./animations/BenefitAnim1";
-
+import TechnologyAnim1 from "./animations/TechnologyAnim1";
 
 export {
   brainwave,
@@ -175,5 +175,6 @@ export {
   IT, 
   app, 
   browser,
-  BenefitAnim1
+  BenefitAnim1,
+  TechnologyAnim1
 };
