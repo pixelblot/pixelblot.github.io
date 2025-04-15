@@ -2,6 +2,9 @@ import { useState } from "react";
 import { benefits } from "../constants";
 import Heading from "./Heading";
 import Section from "./Sections";
+import Arrow from "../assets/svg/Arrow";
+import { GradientLight } from "./design/Benefits";
+import ClipPath from "../assets/svg/ClipPath";
 
 const Benefits = () => {
   const [activeStep, setActiveStep] = useState(0);
@@ -18,15 +21,17 @@ const Benefits = () => {
 
   return (
     <Section id="features">
-      <div className="container relative z-2 overflow-hidden py-8 md:py-12">
+      <div className="container relative z-2 overflow-hidden">
+        {/* Header */}
         <Heading
-          className="mx-auto text-center md:max-w-md lg:max-w-2xl mb-6"
+          className="mx-auto text-center md:max-w-md lg:max-w-2xl"
           title="Rethinking mental health"
           text="We believe mental health care should be accessible to all."
         />
 
-        {/* Content Block */}
-        <div className="flex items-center justify-center gap-4 mb-6">
+        {/* Main content */}
+        <div className="mt-12 flex items-center justify-center gap-4">
+          {/* ← Arrow */}
           <button
             onClick={prev}
             className="bg-n-7 hover:bg-n-6 text-white px-3 py-2 rounded-full"
@@ -34,9 +39,10 @@ const Benefits = () => {
             ←
           </button>
 
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6 w-full max-w-5xl mx-auto">
-            {/* Image or Animation */}
-            <div className="w-full md:w-[45%] flex justify-center">
+          {/* Content (Image or Animation + Text) */}
+          <div className="flex flex-col md:flex-row items-center justify-between gap-10 w-full max-w-6xl">
+            {/* Animation or Fallback Image */}
+            <div className="w-full md:w-1/2 flex justify-center">
               {AnimationComponent ? (
                 <AnimationComponent />
               ) : (
@@ -51,12 +57,14 @@ const Benefits = () => {
             </div>
 
             {/* Text */}
-            <div className="w-full md:w-[45%] max-w-xl text-center md:text-left">
-              <h3 className="text-2xl font-bold text-white mb-2">{current.title}</h3>
-              <p className="text-n-3">{current.text}</p>
+            <div className="w-full md:w-1/2 max-w-xl text-center md:text-left">
+              <p className="text-xs uppercase tracking-wide text-n-3 mb-2"></p>
+              <h3 className="text-3xl font-bold text-white mb-4">{current.title}</h3>
+              <p className="text-n-3 mb-6">{current.text}</p>
             </div>
           </div>
 
+          {/* → Arrow */}
           <button
             onClick={next}
             className="bg-n-7 hover:bg-n-6 text-white px-3 py-2 rounded-full"
@@ -65,19 +73,19 @@ const Benefits = () => {
           </button>
         </div>
 
-        {/* Step headlines */}
-        <div className="mt-10 hidden md:flex gap-4 justify-center">
+        {/* Step headlines row — only on md+ screens */}
+        <div className="mt-16 hidden md:flex gap-6 justify-center">
           {benefits.map((step, index) => (
             <button
               key={index}
               onClick={() => setActiveStep(index)}
-              className={`w-[12rem] text-left py-2 border-t-2 transition-all ${
+              className={`w-[16rem] text-left py-4 border-t-2 transition-all ${
                 index === activeStep
                   ? "border-purple-500 text-white"
                   : "border-n-6 text-n-4"
               }`}
             >
-              <h4 className="text-base font-bold">{step.title}</h4>
+              <h4 className="text-lg font-bold">{step.title}</h4>
             </button>
           ))}
         </div>
