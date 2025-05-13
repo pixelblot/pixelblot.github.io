@@ -1,2 +1,0 @@
-grid_id,preprocess,mode,batch_size,epochs,model,hidden_dim,latent_dim,input_dim,chunk_size,patch_size,num_head,depth,weight_decay,lr,data_path,log_dir,weights,device,result_file,final_loss,finished_at
-9,load,train,128,10,rnn,64,50,2,100,10,4,1,0,0.001,/mnt/data/UserData/vweilnhammer/cursor_soul/Mouse/boun-mouse-dynamics-dataset/users,./output_dir_latest,,cuda,./grid_search_result_transformer.json,5.242660638222169e-05,2024-06-27 17:03:39

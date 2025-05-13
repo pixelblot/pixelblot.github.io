@@ -1,18 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="./assets/pixelblot_logo_tiny-BCl9AYgA.svg"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pixelblot AI</title>
-    <script type="module" crossorigin src="./assets/index-iJCwuIwA.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-MOufGdcz.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Integrate</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: #000000;
+      color: #ffffff;
+      font-family: monospace;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .code-block {
+      width: 50%;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: #aaaaaa;
+    }
+
+    pre {
+      background: #1e1e1e;
+      color: #d4d4d4;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 14px;
+    }
+
+    .widget-container {
+      width: 480px;
+      max-width: 90vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+
+    iframe {
+      width: 100%;
+      height: 70vh;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .code-block {
+        width: 100%;
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+
+      .widget-container {
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="code-block">
+    <h1>Integrate</h1>
+    <h2>Code</h2>
+    <pre><code>&lt;iframe 
+  src="https://pixelblot.ai/embed"
+  width="480"
+  height="700"
+  style="border: none; border-radius: 12px;"&gt;
+&lt;/iframe&gt;</code></pre>
+  </div>
+
+  <div class="widget-container">
+    <iframe src="http://pixelblot.ai/embed" allowfullscreen></iframe>
+  </div>
+
+</body>
 </html>
